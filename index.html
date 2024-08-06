@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Filter Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="filter-container">
+        <button class="filter-button" onclick="filterImages('all')">Show All</button>
+        <img src="Types/1.png" class="filter-button" onclick="filterImages('Normal')" alt="Normal">
+        <img src="Types/2.png" class="filter-button" onclick="filterImages('Fight')" alt="Fight">
+        <img src="Types/3.png" class="filter-button" onclick="filterImages('Flying')" alt="Flying"> 
+        <img src="Types/4.png" class="filter-button" onclick="filterImages('Poison')" alt="Poison"> 
+        <img src="Types/5.png" class="filter-button" onclick="filterImages('Ground')" alt="Ground"> 
+        <img src="Types/6.png" class="filter-button" onclick="filterImages('Rock')" alt="Rock">
+        <img src="Types/7.png" class="filter-button" onclick="filterImages('Bug')" alt="Bug"> 
+        <img src="Types/8.png" class="filter-button" onclick="filterImages('Ghost')" alt="Ghost"> 
+        <img src="Types/9.png" class="filter-button" onclick="filterImages('Steel')" alt="Steel"> 
+        <img src="Types/10.png" class="filter-button" onclick="filterImages('Fire')" alt="Fire"> 
+        <img src="Types/11.png" class="filter-button" onclick="filterImages('Water')" alt="Water"> 
+        <img src="Types/12.png" class="filter-button" onclick="filterImages('Grass')" alt="Grass"> 
+        <img src="Types/13.png" class="filter-button" onclick="filterImages('Electr')" alt="Electr"> 
+        <img src="Types/14.png" class="filter-button" onclick="filterImages('Psychc')" alt="Psychc"> 
+        <img src="Types/15.png" class="filter-button" onclick="filterImages('Ice')" alt="Ice"> 
+        <img src="Types/16.png" class="filter-button" onclick="filterImages('Dragon')" alt="Dragon">
+        <img src="Types/17.png" class="filter-button" onclick="filterImages('Dark')" alt="Dark"> 
+    </div>
+
+    <div class="image-gallery">
+        <img src="Sprites/1.png" class="filter Grass Poison" alt="Bulbasaur" title="Bulbasaur">
+        <img src="Sprites/2.png" class="filter Grass Poison" alt="Ivysaur" title="Ivysaur">
+        <img src="Sprites/3.png" class="filter Grass Poison" alt="Venusaur" title="Venusaur">
+        <img src="Sprites/4.png" class="filter Fire" alt="Charmander" title="Charmander">
+        <img src="Sprites/5.png" class="filter Fire" alt="Charmeleon" title="Charmeleon">
+        <img src="Sprites/6.png" class="filter Fire Flying" alt="Charizard" title="Charizard">
+        <img src="Sprites/7.png" class="filter Water" alt="Squirtle" title="Squirtle">
+        <img src="Sprites/8.png" class="filter Water" alt="Wartortle" title="Wartortle">
+        <img src="Sprites/9.png" class="filter Water" alt="Blastoise" title="Blastoise">
+        <img src="Sprites/10.png" class="filter Bug" alt="Caterpie" title="Caterpie">
+        <img src="Sprites/11.png" class="filter Bug" alt="Metapod" title="Metapod">
+        <img src="Sprites/12.png" class="filter Bug Flying" alt="Butterfree" title="Butterfree">
+        <img src="Sprites/13.png" class="filter Bug Poison" alt="Weedle" title="Weedle">
+        <img src="Sprites/14.png" class="filter Bug Poison" alt="Kakuna" title="Kakuna">
+        <img src="Sprites/15.png" class="filter Bug Poison" alt="Beedrill" title="Beedrill">
+        <img src="Sprites/16.png" class="filter Normal Flying" alt="Pidgey" title="Pidgey">
+        <img src="Sprites/17.png" class="filter Normal Flying" alt="Pidgeotto" title="Pidgeotto">
+        <img src="Sprites/18.png" class="filter Normal Flying" alt="Pidgeot" title="Pidgeot">
+        <img src="Sprites/19.png" class="filter Normal" alt="Rattata" title="Rattata">
+        <img src="Sprites/20.png" class="filter Normal" alt="Raticate" title="Raticate">
+        <img src="Sprites/21.png" class="filter Normal Flying" alt="Spearow" title="Spearow">
+        <img src="Sprites/22.png" class="filter Normal Flying" alt="Fearow" title="Fearow">
+        <img src="Sprites/23.png" class="filter Poison" alt="Ekans" title="Ekans">
+        <img src="Sprites/24.png" class="filter Poison" alt="Arbok" title="Arbok">
+        <img src="Sprites/25.png" class="filter Electr" alt="Pikachu" title="Pikachu">
+        <img src="Sprites/26.png" class="filter Electr" alt="Raichu" title="Raichu">
+        <img src="Sprites/27.png" class="filter Ground" alt="Sandshrew" title="Sandshrew">
+        <img src="Sprites/28.png" class="filter Ground" alt="Sandslash" title="Sandslash">
+        <img src="Sprites/29.png" class="filter Poison" alt="Nidoran" title="Nidoran">
+        <img src="Sprites/30.png" class="filter Poison" alt="Nidorina" title="Nidorina">
+        <img src="Sprites/31.png" class="filter Poison Ground" alt="Nidoqueen" title="Nidoqueen">
+        <img src="Sprites/32.png" class="filter Poison" alt="Nidoran" title="Nidoran">
+        <img src="Sprites/33.png" class="filter Poison" alt="Nidorino" title="Nidorino">
+        <img src="Sprites/34.png" class="filter Poison Ground" alt="Nidoking" title="Nidoking">
+        <img src="Sprites/35.png" class="filter Normal" alt="Clefairy" title="Clefairy">
+        <img src="Sprites/36.png" class="filter Normal" alt="Clefable" title="Clefable">
+        <img src="Sprites/37.png" class="filter Fire" alt="Vulpix" title="Vulpix">
+        <img src="Sprites/38.png" class="filter Fire" alt="Ninetales" title="Ninetales">
+        <img src="Sprites/39.png" class="filter Normal" alt="Jigglypuff" title="Jigglypuff">
+        <img src="Sprites/40.png" class="filter Normal" alt="Wigglytuff" title="Wigglytuff">
+        <img src="Sprites/41.png" class="filter Poison Flying" alt="Zubat" title="Zubat">
+        <img src="Sprites/42.png" class="filter Poison Flying" alt="Golbat" title="Golbat">
+        <img src="Sprites/43.png" class="filter Grass Poison" alt="Oddish" title="Oddish">
+        <img src="Sprites/44.png" class="filter Grass Poison" alt="Gloom" title="Gloom">
+        <img src="Sprites/45.png" class="filter Grass Poison" alt="Vileplume" title="Vileplume">
+        <img src="Sprites/46.png" class="filter Bug Grass" alt="Paras" title="Paras">
+        <img src="Sprites/47.png" class="filter Bug Grass" alt="Parasect" title="Parasect">
+        <img src="Sprites/48.png" class="filter Bug Poison" alt="Venonat" title="Venonat">
+        <img src="Sprites/49.png" class="filter Bug Poison" alt="Venomoth" title="Venomoth">
+        <img src="Sprites/50.png" class="filter Ground" alt="Diglett" title="Diglett">
+        <img src="Sprites/51.png" class="filter Ground" alt="Dugtrio" title="Dugtrio">
+        <img src="Sprites/52.png" class="filter Normal" alt="Meowth" title="Meowth">
+        <img src="Sprites/53.png" class="filter Normal" alt="Persian" title="Persian">
+        <img src="Sprites/54.png" class="filter Water" alt="Psyduck" title="Psyduck">
+        <img src="Sprites/55.png" class="filter Water" alt="Golduck" title="Golduck">
+        <img src="Sprites/56.png" class="filter Fight" alt="Mankey" title="Mankey">
+        <img src="Sprites/57.png" class="filter Fight" alt="Primeape" title="Primeape">
+        <img src="Sprites/58.png" class="filter Fire" alt="Growlithe" title="Growlithe">
+        <img src="Sprites/59.png" class="filter Fire" alt="Arcanine" title="Arcanine">
+        <img src="Sprites/60.png" class="filter Water" alt="Poliwag" title="Poliwag">
+        <img src="Sprites/61.png" class="filter Water" alt="Poliwhirl" title="Poliwhirl">
+        <img src="Sprites/62.png" class="filter Water Fight" alt="Poliwrath" title="Poliwrath">
+        <img src="Sprites/63.png" class="filter Psychc" alt="Abra" title="Abra">
+        <img src="Sprites/64.png" class="filter Psychc" alt="Kadabra" title="Kadabra">
+        <img src="Sprites/65.png" class="filter Psychc" alt="Alakazam" title="Alakazam">
+        <img src="Sprites/66.png" class="filter Fight" alt="Machop" title="Machop">
+        <img src="Sprites/67.png" class="filter Fight" alt="Machoke" title="Machoke">
+        <img src="Sprites/68.png" class="filter Fight" alt="Machamp" title="Machamp">
+        <img src="Sprites/69.png" class="filter Grass Poison" alt="Bellsprout" title="Bellsprout">
+        <img src="Sprites/70.png" class="filter Grass Poison" alt="Weepinbell" title="Weepinbell">
+        <img src="Sprites/71.png" class="filter Grass Poison" alt="Victreebel" title="Victreebel">
+        <img src="Sprites/72.png" class="filter Water Poison" alt="Tentacool" title="Tentacool">
+        <img src="Sprites/73.png" class="filter Water Poison" alt="Tentacruel" title="Tentacruel">
+        <img src="Sprites/74.png" class="filter Rock Ground" alt="Geodude" title="Geodude">
+        <img src="Sprites/75.png" class="filter Rock Ground" alt="Graveler" title="Graveler">
+        <img src="Sprites/76.png" class="filter Rock Ground" alt="Golem" title="Golem">
+        <img src="Sprites/77.png" class="filter Fire" alt="Ponyta" title="Ponyta">
+        <img src="Sprites/78.png" class="filter Fire" alt="Rapidash" title="Rapidash">
+        <img src="Sprites/79.png" class="filter Water Psychc" alt="Slowpoke" title="Slowpoke">
+        <img src="Sprites/80.png" class="filter Water Psychc" alt="Slowbro" title="Slowbro">
+        <img src="Sprites/81.png" class="filter Electr Steel" alt="Magnemite" title="Magnemite">
+        <img src="Sprites/82.png" class="filter Electr Steel" alt="Magneton" title="Magneton">
+        <img src="Sprites/83.png" class="filter Normal Flying" alt="Farfetch'd" title="Farfetch'd">
+        <img src="Sprites/84.png" class="filter Normal Flying" alt="Doduo" title="Doduo">
+        <img src="Sprites/85.png" class="filter Normal Flying" alt="Dodrio" title="Dodrio">
+        <img src="Sprites/86.png" class="filter Water" alt="Seel" title="Seel">
+        <img src="Sprites/87.png" class="filter Water Ice" alt="Dewgong" title="Dewgong">
+        <img src="Sprites/88.png" class="filter Poison" alt="Grimer" title="Grimer">
+        <img src="Sprites/89.png" class="filter Poison" alt="Muk" title="Muk">
+        <img src="Sprites/90.png" class="filter Water" alt="Shellder" title="Shellder">
+        <img src="Sprites/91.png" class="filter Water Ice" alt="Cloyster" title="Cloyster">
+        <img src="Sprites/92.png" class="filter Ghost Poison" alt="Gastly" title="Gastly">
+        <img src="Sprites/93.png" class="filter Ghost Poison" alt="Haunter" title="Haunter">
+        <img src="Sprites/94.png" class="filter Ghost Poison" alt="Gengar" title="Gengar">
+        <img src="Sprites/95.png" class="filter Rock Ground" alt="Onix" title="Onix">
+        <img src="Sprites/96.png" class="filter Psychc" alt="Drowzee" title="Drowzee">
+        <img src="Sprites/97.png" class="filter Psychc" alt="Hypno" title="Hypno">
+        <img src="Sprites/98.png" class="filter Water" alt="Krabby" title="Krabby">
+        <img src="Sprites/99.png" class="filter Water" alt="Kingler" title="Kingler">
+        <img src="Sprites/100.png" class="filter Electr" alt="Voltorb" title="Voltorb">
+        <img src="Sprites/101.png" class="filter Electr" alt="Electrode" title="Electrode">
+        <img src="Sprites/102.png" class="filter Grass Psychc" alt="Exeggcute" title="Exeggcute">
+        <img src="Sprites/103.png" class="filter Grass Psychc" alt="Exeggutor" title="Exeggutor">
+        <img src="Sprites/104.png" class="filter Ground" alt="Cubone" title="Cubone">
+        <img src="Sprites/105.png" class="filter Ground" alt="Marowak" title="Marowak">
+        <img src="Sprites/106.png" class="filter Fight" alt="Hitmonlee" title="Hitmonlee">
+        <img src="Sprites/107.png" class="filter Fight" alt="Hitmonchan" title="Hitmonchan">
+        <img src="Sprites/108.png" class="filter Normal" alt="Lickitung" title="Lickitung">
+        <img src="Sprites/109.png" class="filter Poison" alt="Koffing" title="Koffing">
+        <img src="Sprites/110.png" class="filter Poison" alt="Weezing" title="Weezing">
+        <img src="Sprites/111.png" class="filter Ground Rock" alt="Rhyhorn" title="Rhyhorn">
+        <img src="Sprites/112.png" class="filter Ground Rock" alt="Rhydon" title="Rhydon">
+        <img src="Sprites/113.png" class="filter Normal" alt="Chansey" title="Chansey">
+        <img src="Sprites/114.png" class="filter Grass" alt="Tangela" title="Tangela">
+        <img src="Sprites/115.png" class="filter Normal" alt="Kangaskhan" title="Kangaskhan">
+        <img src="Sprites/116.png" class="filter Water" alt="Horsea" title="Horsea">
+        <img src="Sprites/117.png" class="filter Water" alt="Seadra" title="Seadra">
+        <img src="Sprites/118.png" class="filter Water" alt="Goldeen" title="Goldeen">
+        <img src="Sprites/119.png" class="filter Water" alt="Seaking" title="Seaking">
+        <img src="Sprites/120.png" class="filter Water" alt="Staryu" title="Staryu">
+        <img src="Sprites/121.png" class="filter Water Psychc" alt="Starmie" title="Starmie">
+        <img src="Sprites/122.png" class="filter Psychc" alt="Mr. Mime" title="Mr. Mime">
+        <img src="Sprites/123.png" class="filter Bug Flying" alt="Scyther" title="Scyther">
+        <img src="Sprites/124.png" class="filter Ice Psychc" alt="Jynx" title="Jynx">
+        <img src="Sprites/125.png" class="filter Electr" alt="Electabuzz" title="Electabuzz">
+        <img src="Sprites/126.png" class="filter Fire" alt="Magmar" title="Magmar">
+        <img src="Sprites/127.png" class="filter Bug" alt="Pinsir" title="Pinsir">
+        <img src="Sprites/128.png" class="filter Normal" alt="Tauros" title="Tauros">
+        <img src="Sprites/129.png" class="filter Water" alt="Magikarp" title="Magikarp">
+        <img src="Sprites/130.png" class="filter Water Flying" alt="Gyarados" title="Gyarados">
+        <img src="Sprites/131.png" class="filter Water Ice" alt="Lapras" title="Lapras">
+        <img src="Sprites/132.png" class="filter Normal" alt="Ditto" title="Ditto">
+        <img src="Sprites/133.png" class="filter Normal" alt="Eevee" title="Eevee">
+        <img src="Sprites/134.png" class="filter Water" alt="Vaporeon" title="Vaporeon">
+        <img src="Sprites/135.png" class="filter Electr" alt="Jolteon" title="Jolteon">
+        <img src="Sprites/136.png" class="filter Fire" alt="Flareon" title="Flareon">
+        <img src="Sprites/137.png" class="filter Normal" alt="Porygon" title="Porygon">
+        <img src="Sprites/138.png" class="filter Rock Water" alt="Omanyte" title="Omanyte">
+        <img src="Sprites/139.png" class="filter Rock Water" alt="Omastar" title="Omastar">
+        <img src="Sprites/140.png" class="filter Rock Water" alt="Kabuto" title="Kabuto">
+        <img src="Sprites/141.png" class="filter Rock Water" alt="Kabutops" title="Kabutops">
+        <img src="Sprites/142.png" class="filter Rock Flying" alt="Aerodactyl" title="Aerodactyl">
+        <img src="Sprites/143.png" class="filter Normal" alt="Snorlax" title="Snorlax">
+        <img src="Sprites/144.png" class="filter Ice Flying" alt="Articuno" title="Articuno">
+        <img src="Sprites/145.png" class="filter Electr Flying" alt="Zapdos" title="Zapdos">
+        <img src="Sprites/146.png" class="filter Fire Flying" alt="Moltres" title="Moltres">
+        <img src="Sprites/147.png" class="filter Dragon" alt="Dratini" title="Dratini">
+        <img src="Sprites/148.png" class="filter Dragon" alt="Dragonair" title="Dragonair">
+        <img src="Sprites/149.png" class="filter Dragon Flying" alt="Dragonite" title="Dragonite">
+        <img src="Sprites/150.png" class="filter Psychc" alt="Mewtwo" title="Mewtwo">
+        <img src="Sprites/151.png" class="filter Psychc" alt="Mew" title="Mew">
+        <img src="Sprites/152.png" class="filter Grass" alt="Chikorita" title="Chikorita">
+        <img src="Sprites/153.png" class="filter Grass" alt="Bayleef" title="Bayleef">
+        <img src="Sprites/154.png" class="filter Grass" alt="Meganium" title="Meganium">
+        <img src="Sprites/155.png" class="filter Fire" alt="Cyndaquil" title="Cyndaquil">
+        <img src="Sprites/156.png" class="filter Fire" alt="Quilava" title="Quilava">
+        <img src="Sprites/157.png" class="filter Fire" alt="Typhlosion" title="Typhlosion">
+        <img src="Sprites/158.png" class="filter Water" alt="Totodile" title="Totodile">
+        <img src="Sprites/159.png" class="filter Water" alt="Croconaw" title="Croconaw">
+        <img src="Sprites/160.png" class="filter Water" alt="Feraligatr" title="Feraligatr">
+        <img src="Sprites/161.png" class="filter Normal" alt="Sentret" title="Sentret">
+        <img src="Sprites/162.png" class="filter Normal" alt="Furret" title="Furret">
+        <img src="Sprites/163.png" class="filter Normal Flying" alt="Hoothoot" title="Hoothoot">
+        <img src="Sprites/164.png" class="filter Normal Flying" alt="Noctowl" title="Noctowl">
+        <img src="Sprites/165.png" class="filter Bug Flying" alt="Ledyba" title="Ledyba">
+        <img src="Sprites/166.png" class="filter Bug Flying" alt="Ledian" title="Ledian">
+        <img src="Sprites/167.png" class="filter Bug Poison" alt="Spinarak" title="Spinarak">
+        <img src="Sprites/168.png" class="filter Bug Poison" alt="Ariados" title="Ariados">
+        <img src="Sprites/169.png" class="filter " alt="" title="">
+        <img src="Sprites/170.png" class="filter " alt="" title="">
+        <img src="Sprites/171.png" class="filter " alt="" title="">
+        <img src="Sprites/172.png" class="filter " alt="" title="">
+        <img src="Sprites/173.png" class="filter " alt="" title="">
+        <img src="Sprites/174.png" class="filter " alt="" title="">
+        <img src="Sprites/175.png" class="filter " alt="" title="">
+        <img src="Sprites/176.png" class="filter " alt="" title="">
+        <img src="Sprites/177.png" class="filter " alt="" title="">
+        <img src="Sprites/178.png" class="filter " alt="" title="">
+        <img src="Sprites/179.png" class="filter " alt="" title="">
+        <img src="Sprites/180.png" class="filter " alt="" title="">
+        <img src="Sprites/181.png" class="filter " alt="" title="">
+        <img src="Sprites/182.png" class="filter " alt="" title="">
+        <img src="Sprites/183.png" class="filter " alt="" title="">
+        <img src="Sprites/184.png" class="filter " alt="" title="">
+        <img src="Sprites/185.png" class="filter " alt="" title="">
+        <img src="Sprites/186.png" class="filter " alt="" title="">
+        <img src="Sprites/187.png" class="filter " alt="" title="">
+        <img src="Sprites/188.png" class="filter " alt="" title="">
+        <img src="Sprites/189.png" class="filter " alt="" title="">
+        <img src="Sprites/190.png" class="filter " alt="" title="">
+        <img src="Sprites/191.png" class="filter " alt="" title="">
+        <img src="Sprites/192.png" class="filter " alt="" title="">
+        <img src="Sprites/193.png" class="filter " alt="" title="">
+        <img src="Sprites/194.png" class="filter " alt="" title="">
+        <img src="Sprites/195.png" class="filter " alt="" title="">
+        <img src="Sprites/196.png" class="filter " alt="" title="">
+        <img src="Sprites/197.png" class="filter " alt="" title="">
+        <img src="Sprites/198.png" class="filter " alt="" title="">
+        <img src="Sprites/199.png" class="filter " alt="" title="">
+        <img src="Sprites/200.png" class="filter " alt="" title="">
+        <img src="Sprites/201.png" class="filter " alt="" title="">
+        <img src="Sprites/202.png" class="filter " alt="" title="">
+        <img src="Sprites/203.png" class="filter " alt="" title="">
+        <img src="Sprites/204.png" class="filter " alt="" title="">
+        <img src="Sprites/205.png" class="filter " alt="" title="">
+        <img src="Sprites/206.png" class="filter " alt="" title="">
+        <img src="Sprites/207.png" class="filter " alt="" title="">
+        <img src="Sprites/208.png" class="filter " alt="" title="">
+        <img src="Sprites/209.png" class="filter " alt="" title="">
+        <img src="Sprites/210.png" class="filter " alt="" title="">
+        <img src="Sprites/211.png" class="filter " alt="" title="">
+        <img src="Sprites/212.png" class="filter " alt="" title="">
+        <img src="Sprites/213.png" class="filter " alt="" title="">
+        <img src="Sprites/214.png" class="filter " alt="" title="">
+        <img src="Sprites/215.png" class="filter " alt="" title="">
+        <img src="Sprites/216.png" class="filter " alt="" title="">
+        <img src="Sprites/217.png" class="filter " alt="" title="">
+        <img src="Sprites/218.png" class="filter " alt="" title="">
+        <img src="Sprites/219.png" class="filter " alt="" title="">
+        <img src="Sprites/220.png" class="filter " alt="" title="">
+        <img src="Sprites/221.png" class="filter " alt="" title="">
+        <img src="Sprites/222.png" class="filter " alt="" title="">
+        <img src="Sprites/223.png" class="filter " alt="" title="">
+        <img src="Sprites/224.png" class="filter " alt="" title="">
+        <img src="Sprites/225.png" class="filter " alt="" title="">
+        <img src="Sprites/226.png" class="filter " alt="" title="">
+        <img src="Sprites/227.png" class="filter " alt="" title="">
+        <img src="Sprites/228.png" class="filter " alt="" title="">
+        <img src="Sprites/229.png" class="filter " alt="" title="">
+        <img src="Sprites/230.png" class="filter " alt="" title="">
+        <img src="Sprites/231.png" class="filter " alt="" title="">
+        <img src="Sprites/232.png" class="filter " alt="" title="">
+        <img src="Sprites/233.png" class="filter " alt="" title="">
+        <img src="Sprites/234.png" class="filter " alt="" title="">
+        <img src="Sprites/235.png" class="filter " alt="" title="">
+        <img src="Sprites/236.png" class="filter " alt="" title="">
+        <img src="Sprites/237.png" class="filter " alt="" title="">
+        <img src="Sprites/238.png" class="filter " alt="" title="">
+        <img src="Sprites/239.png" class="filter " alt="" title="">
+        <img src="Sprites/240.png" class="filter " alt="" title="">
+        <img src="Sprites/241.png" class="filter " alt="" title="">
+        <img src="Sprites/242.png" class="filter " alt="" title="">
+        <img src="Sprites/243.png" class="filter " alt="" title="">
+        <img src="Sprites/244.png" class="filter " alt="" title="">
+        <img src="Sprites/245.png" class="filter " alt="" title="">
+        <img src="Sprites/246.png" class="filter " alt="" title="">
+        <img src="Sprites/247.png" class="filter " alt="" title="">
+        <img src="Sprites/248.png" class="filter " alt="" title="">
+        <img src="Sprites/249.png" class="filter " alt="" title="">
+        <img src="Sprites/250.png" class="filter " alt="" title="">
+        <img src="Sprites/251.png" class="filter " alt="" title="">
+        <img src="Sprites/252.png" class="filter " alt="" title="">
+        <img src="Sprites/253.png" class="filter " alt="" title="">
+        <img src="Sprites/254.png" class="filter " alt="" title="">
+        <img src="Sprites/255.png" class="filter " alt="" title="">
+        <img src="Sprites/256.png" class="filter " alt="" title="">
+        <img src="Sprites/257.png" class="filter " alt="" title="">
+        <img src="Sprites/258.png" class="filter " alt="" title="">
+        <img src="Sprites/259.png" class="filter " alt="" title="">
+        <img src="Sprites/260.png" class="filter " alt="" title="">
+        <img src="Sprites/261.png" class="filter " alt="" title="">
+        <img src="Sprites/262.png" class="filter " alt="" title="">
+        <img src="Sprites/263.png" class="filter " alt="" title="">
+        <img src="Sprites/264.png" class="filter " alt="" title="">
+        <img src="Sprites/265.png" class="filter " alt="" title="">
+        <img src="Sprites/266.png" class="filter " alt="" title="">
+        <img src="Sprites/267.png" class="filter " alt="" title="">
+        <img src="Sprites/268.png" class="filter " alt="" title="">
+        <img src="Sprites/269.png" class="filter " alt="" title="">
+        <img src="Sprites/270.png" class="filter " alt="" title="">
+        <img src="Sprites/271.png" class="filter " alt="" title="">
+        <img src="Sprites/272.png" class="filter " alt="" title="">
+        <img src="Sprites/273.png" class="filter " alt="" title="">
+        <img src="Sprites/274.png" class="filter " alt="" title="">
+        <img src="Sprites/275.png" class="filter " alt="" title="">
+        <img src="Sprites/276.png" class="filter " alt="" title="">
+        <img src="Sprites/277.png" class="filter " alt="" title="">
+        <img src="Sprites/278.png" class="filter " alt="" title="">
+        <img src="Sprites/279.png" class="filter " alt="" title="">
+        <img src="Sprites/280.png" class="filter " alt="" title="">
+        <img src="Sprites/281.png" class="filter " alt="" title="">
+        <img src="Sprites/282.png" class="filter " alt="" title="">
+        <img src="Sprites/283.png" class="filter " alt="" title="">
+        <img src="Sprites/284.png" class="filter " alt="" title="">
+        <img src="Sprites/285.png" class="filter " alt="" title="">
+        <img src="Sprites/286.png" class="filter " alt="" title="">
+        <img src="Sprites/287.png" class="filter " alt="" title="">
+        <img src="Sprites/288.png" class="filter " alt="" title="">
+        <img src="Sprites/289.png" class="filter " alt="" title="">
+        <img src="Sprites/290.png" class="filter " alt="" title="">
+        <img src="Sprites/291.png" class="filter " alt="" title="">
+        <img src="Sprites/292.png" class="filter " alt="" title="">
+        <img src="Sprites/293.png" class="filter " alt="" title="">
+        <img src="Sprites/294.png" class="filter " alt="" title="">
+        <img src="Sprites/295.png" class="filter " alt="" title="">
+        <img src="Sprites/296.png" class="filter " alt="" title="">
+        <img src="Sprites/297.png" class="filter " alt="" title="">
+        <img src="Sprites/298.png" class="filter " alt="" title="">
+        <img src="Sprites/299.png" class="filter " alt="" title="">
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

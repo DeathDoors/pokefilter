@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.filter-container {
+    margin: 20px;
+    text-align: center;
+}
+
+.filter-button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
+
+.filter-button:hover {
+    transform: scale(1.1);
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
