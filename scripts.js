@@ -1,3 +1,14 @@
+window.addEventListener('scroll', function() {
+    const filterContainer = document.querySelector('.filter-container');
+    const sticky = filterContainer.offsetTop;
+
+    if (window.pageYOffset > sticky) {
+        filterContainer.classList.add('fixed');
+    } else {
+        filterContainer.classList.remove('fixed');
+    }
+});
+
 let selectedFilters = new Set();
 
 function filterImages(category) {
