@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="filter-container">
+    <div class="button-container">
+        <button class="nav-button" onclick="showGallery()">Show Pokemon Gallery</button>
+        <button class="nav-button" onclick="showRandomImage()">Show Random Pokemon</button>
+    </div>
+    
+    <div class="filter-container" id="filter-container">
         <button class="filter-button" onclick="filterImages('all')">Show All</button>
         <img src="Types/1.png" class="filter-button" onclick="filterImages('Normal')" alt="Normal">
         <img src="Types/2.png" class="filter-button" onclick="filterImages('Fight')" alt="Fight">
@@ -28,7 +33,7 @@
         <img src="Types/17.png" class="filter-button" onclick="filterImages('Dark')" alt="Dark"> 
     </div>
 
-    <div class="image-gallery">
+    <div class="image-gallery" id="image-gallery">
         <img src="Sprites/1.png" class="filter Grass Poison" alt="Bulbasaur" title="Bulbasaur">
         <img src="Sprites/2.png" class="filter Grass Poison" alt="Ivysaur" title="Ivysaur">
         <img src="Sprites/3.png" class="filter Grass Poison" alt="Venusaur" title="Venusaur">
@@ -415,6 +420,11 @@
         <img src="Sprites/384.png" class="filter Dragon Flying" alt="Rayquaza" title="Rayquaza">
         <img src="Sprites/385.png" class="filter Steel Psychc" alt="Jirachi" title="Jirachi">
         <img src="Sprites/386.png" class="filter Psychc" alt="Deoxys" title="Deoxys">
+    </div>
+
+    <div class="random-image-container" id="random-image-container">
+        <img id="random-image" alt="Random Image">
+        <p id="random-image-title"></p>
     </div>
 
     <script src="scripts.js"></script>
