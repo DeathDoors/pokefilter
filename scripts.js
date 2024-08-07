@@ -47,6 +47,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.showGallery = function() {
+        // Clear any filters and reset selectedFilters
+        selectedFilters.clear();
+        selectedFilters.add('all');
+
+        // Reset the visibility of all images
+        const images = document.getElementsByClassName('filter');
+        for (let img of images) {
+            img.style.display = 'block';
+        }
+
         document.getElementById('image-gallery').style.display = 'flex';
         document.getElementById('random-image-container').style.display = 'none';
         document.querySelector('.filter-container').style.display = 'block';
@@ -55,10 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
     window.showRandomImage = function() {
         const images = document.querySelectorAll('.image-gallery img');
         const randomIndex = Math.floor(Math.random() * images.length);
-        const randomImageElement = images[randomIndex].src;
+        const randomImageElement = images[randomIndex];
         const randomImageSrc = randomImageElement.src;
         const randomImageTitle = randomImageElement.getAttribute('title');
-        
+
         if (randomImageElement && randomImageElement.nodeType === 1 && randomImageElement.nodeName === "IMG") {
             document.getElementById('random-image').src = randomImageSrc;
             document.getElementById('random-image-title').textContent = randomImageTitle;
@@ -68,10 +78,5 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             console.error('Selected element is not a valid image element.');
         }
-        document.getElementById('random-image').src = randomImageSrc;
-        document.getElementById('random-image-title').textContent = randomImageTitle;
-        document.getElementById('random-image-container').style.display = 'block';
-        document.getElementById('image-gallery').style.display = 'none';
-        document.querySelector('.filter-container').style.display = 'none';
     }
 });
