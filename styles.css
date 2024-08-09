@@ -127,28 +127,28 @@ body, html {
         margin-bottom: 10px;
     }
 
-<<<<<<< Updated upstream
-.image-gallery img:hover {
+    .image-gallery img:hover {
     transform: scale(1.1);
-}
-.random-image-container {
+    }
+    .random-image-container {
     text-align: center;
     display: none; /* Initially hidden */
     margin: 20px;
-}
+    }
 
-.random-image-container img {
+    .random-image-container img {
     width: 300px;
     height: 300px;
     margin: 20px;
     transition: transform 0.2s;
-}
+    }
 
-.random-image-container img:hover {
+    .random-image-container img:hover {
     transform: scale(1.1);
-}
+    }
 
-#random-image-title {
+    #random-image-title {
     font-size: 18px;
     margin-top: 10px;
+    }
 }
