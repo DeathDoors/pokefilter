@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             img.style.display = 'block';
         }
 
-        document.getElementById('image-gallery').style.display = 'flex';
+        document.getElementById('image-gallery').style.display = 'grid';
         document.getElementById('random-image-container').style.display = 'none';
         document.querySelector('.filter-container').style.display = 'block';
 <<<<<<< Updated upstream
@@ -79,13 +79,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('random-image-container').style.display = 'block';
             document.getElementById('image-gallery').style.display = 'none';
             document.querySelector('.filter-container').style.display = 'none';
-<<<<<<< Updated upstream
-=======
-            document.getElementById('filter-toggle-button').style.display = 'none';
-            document.querySelector('.button-container').style.display = 'none';
->>>>>>> Stashed changes
         } else {
             console.error('Selected element is not a valid image element.');
         }
     }
-});
+})
