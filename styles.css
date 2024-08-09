@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,10 +16,36 @@ body {
     display: none;
     width: 100%;
     background-color: rgb(0, 0, 0);
+=======
+/* Global Styles */
+body, html {
+    margin: 1%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: rgb(3, 3, 71);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-button {
+    font-size: 24px;
+    width: 80%;
+    max-width: 200px;
+    margin: 10px 0;
+    padding: 20px;
+>>>>>>> Stashed changes
     text-align: center;
     transition: top 0.3s;
 }
 
+<<<<<<< Updated upstream
 .fixed {
     position: fixed;
     top: 0;
@@ -75,4 +102,139 @@ body {
 #random-image-title {
     font-size: 18px;
     margin-top: 10px;
+=======
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        height: 10vh;
+    }
+    
+    .nav-button {
+        font-size: 24px;
+        width: 80%;
+        max-width: 300px;
+        margin: 100px 0;
+        padding: 20px;
+        text-align: center;
+        padding-left: 50%;
+        padding-right: 50%;
+    }
+
+    #filter-toggle-button {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: red;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .filter-container {
+        display: none;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        background-color: #ee1010;
+        z-index: 999;
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-button {
+        margin: 5px;
+    }
+
+    .button-container.top-position {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        justify-content: flex-start;
+        z-index: 1000;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    .filter-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200px;
+        background-color: #f0f0f0;
+        flex-direction: column;
+        padding: 10px;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    .nav-button {
+        font-size: 18px;
+        width: 80%;
+        max-width: 300px;
+        margin: 10px 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .image-gallery {
+        margin-left: 220px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .filter-button {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .image-gallery img:hover {
+        transform: scale(1.1);
+    }
+
+    .random-image-container {
+        display: none;
+        text-align: center;
+        margin: 20px;
+        max-width: 300px;
+    }
+
+    .random-image-container img {
+        display: grid;
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        transition: transform 0.2s;
+    }
+
+    .random-image-container img:hover {
+        transform: scale(1.1);
+        display: grid;
+        align-self: center;
+    }
+
+    #random-image-title {
+        color: #ee1010;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+>>>>>>> Stashed changes
 }
