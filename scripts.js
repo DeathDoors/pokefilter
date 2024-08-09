@@ -57,9 +57,10 @@ document.addEventListener('DOMContentLoaded', function() {
             img.style.display = 'block';
         }
 
-        document.getElementById('image-gallery').style.display = 'flex';
+        document.getElementById('image-gallery').style.display = 'grid';
         document.getElementById('random-image-container').style.display = 'none';
         document.querySelector('.filter-container').style.display = 'block';
+        document.querySelector('.button-container').classList.add('top-position');
     }
 
     window.showRandomImage = function() {
@@ -75,8 +76,20 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('random-image-container').style.display = 'block';
             document.getElementById('image-gallery').style.display = 'none';
             document.querySelector('.filter-container').style.display = 'none';
+            document.getElementById('filter-toggle-button').style.display = 'none';
+            document.querySelector('.button-container').style.display = 'flex';
+            document.querySelector('.button-container').classList.remove('top-position');
         } else {
             console.error('Selected element is not a valid image element.');
+        }
+    }
+
+    function toggleFilters() {
+        const filterContainer = document.getElementById('filter-container');
+        if (filterContainer.style.display === 'none' || filterContainer.style.display === '') {
+            filterContainer.style.display = 'flex';
+        } else {
+            filterContainer.style.display = 'none';
         }
     }
 });
