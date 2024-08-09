@@ -83,13 +83,4 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Selected element is not a valid image element.');
         }
     }
-
-    function toggleFilters() {
-        const filterContainer = document.getElementById('filter-container');
-        if (filterContainer.style.display === 'none' || filterContainer.style.display === '') {
-            filterContainer.style.display = 'flex';
-        } else {
-            filterContainer.style.display = 'none';
-        }
-    }
-});
+})
