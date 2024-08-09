@@ -1,32 +1,3 @@
-/* General Styles */
-body, html {
-    margin: 01%;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    background-color: rgb(3, 3, 71);
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-}
-
-.nav-button {
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.filter-container {
-    display: none;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-=======
 /* Global Styles */
 body, html {
     margin: 1%;
@@ -47,24 +18,58 @@ body, html {
 .nav-button {
     font-size: 24px;
     width: 80%;
-    max-width: 200px;
-    margin: 10px 0;
-    padding: 20px;
->>>>>>> Stashed changes
-    font-size: 24px;
-    width: 80%;
     max-width: 300px;
     margin: 10px 0;
     padding: 20px;
     text-align: center;
-    transition: top 0.3s;
 }
 
-.fixed {
-    position: fixed;
-    top: 0;
-    z-index: 1000; /* Ensures the filter bar is above other content */
-}
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        height: 10vh;
+    }
+    
+    .nav-button {
+        font-size: 24px;
+        width: 80%;
+        max-width: 300px;
+        margin: 100px 0;
+        padding: 20px;
+        text-align: center;
+        padding-left: 50%;
+        padding-right: 50%;
+    }
+
+    #filter-toggle-button {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: red;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .filter-container {
+        display: none;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        background-color: #ee1010;
+        z-index: 999;
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     .filter-button {
         margin: 5px;
@@ -75,16 +80,16 @@ body, html {
         top: 0;
         left: 0;
         width: 100%;
-        justify-content: flex-start;
-        background-color: white;
-        z-index: 1000;
-        padding: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
         height: auto;
+        padding: 10px;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        justify-content: flex-start;
+        z-index: 1000;
     }
 }
 
-/* Desktop Layout */
+/* Desktop Styles */
 @media (min-width: 769px) {
     .filter-container {
         display: none;
@@ -123,31 +128,30 @@ body, html {
     }
 
     .image-gallery img:hover {
-    transform: scale(1.1);
+        transform: scale(1.1);
     }
+
     .random-image-container {
-    text-align: center;
-    display: none; /* Initially hidden */
-    margin: 20px;
+        display: block; 
+        text-align: center;
+        margin: 20px auto; 
+        max-width: 300px; 
     }
 
     .random-image-container img {
-    display: grid;
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    transition: transform 0.2s;
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 10px;
+        transition: transform 0.2s;
     }
 
     .random-image-container img:hover {
-    transform: scale(1.1);
-    display: grid;
-    align-self: center;
+        transform: scale(1.1);
     }
 
     #random-image-title {
-    color: #ee1010;
-    font-size: 18px;
-    margin-top: 10px;
-}
+        color: #ee1010;
+        font-size: 18px;
+        margin-top: 10px;
+    }
 }
