@@ -60,10 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('image-gallery').style.display = 'grid';
         document.getElementById('random-image-container').style.display = 'none';
         document.querySelector('.filter-container').style.display = 'block';
-<<<<<<< Updated upstream
-=======
         document.querySelector('.button-container').style.display = 'none';
->>>>>>> Stashed changes
     }
 
     window.showRandomImage = function() {
