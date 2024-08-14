@@ -151,7 +151,13 @@ body, html {
 
     #random-image-title {
         color: #ee1010;
-        font-size: 18px;
+        font-size: 20px;
         margin-top: 10px;
+    }
+
+    #randomClass {
+        color: yellow;
+        font-size: 25px;
+        margin: auto;
     }
 }

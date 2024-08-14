@@ -69,6 +69,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const randomImageElement = images[randomIndex];
         const randomImageSrc = randomImageElement.src;
         const randomImageTitle = randomImageElement.getAttribute('title');
+        const randomClass = randomImageElement.getAttribute('class');
+        const filteredclass = randomClass
+            .split(' ')
+            .filter(className => className !== 'filter')
+            .join (' ');
 
         if (randomImageElement && randomImageElement.nodeType === 1 && randomImageElement.nodeName === "IMG") {
             document.getElementById('random-image').src = randomImageSrc;
@@ -76,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('random-image-container').style.display = 'block';
             document.getElementById('image-gallery').style.display = 'none';
             document.querySelector('.filter-container').style.display = 'none';
+            document.getElementById('randomClass').textContent = filteredclass;
         } else {
             console.error('Selected element is not a valid image element.');
         }
