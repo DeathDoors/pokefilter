@@ -27,22 +27,24 @@ body, html {
 /* Mobile Styles */
 @media (max-width: 768px) {
     .button-container {
-        display: flex;
+        display: block;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        height: 10vh;
+        justify-content: left;
+        height: 1vh;
+        text-align: left;
     }
     
     .nav-button {
-        font-size: 24px;
-        width: 80%;
-        max-width: 300px;
+        font-size: 20px;
+        width: 30%;
+        max-width: 20%;
         margin: 100px 0;
-        padding: 20px;
-        text-align: center;
-        padding-left: 50%;
-        padding-right: 50%;
+        text-align: right;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 5%;
+        max-height: 120px;
+        
     }
 
     #filter-toggle-button {
@@ -78,14 +80,42 @@ body, html {
     .button-container.top-position {
         position: fixed;
         top: 0;
-        left: 0;
+        left: 10px;
         width: 100%;
         height: auto;
-        padding: 10px;
+        padding: 1px;
         background-color: white;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
         justify-content: flex-start;
         z-index: 1000;
+    }
+
+    .random-image-container{
+        display: block; 
+        text-align: center;
+        margin: 20px auto; 
+        max-width: 300px;
+        position: relative;
+        padding: 200px;
+    }
+
+    .image-gallery {
+        margin-left: 7%;
+        padding: 5px;
+        padding-top: 200px;
+        gap: 1px;
+    }
+
+    #random-image-title {
+        color: #ee1010;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    #randomClass {
+        color: yellow;
+        font-size: 25px;
+        margin: auto;
     }
 }
 
